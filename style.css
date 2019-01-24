@@ -7,7 +7,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    
 }
 ul {
     float: right;
@@ -18,9 +18,9 @@ ul {
 ul li{
     float: left;
     width: 156px;
-    display: inline-block;
     line-height: 30px;
-    text-align: center;
+    
+    
 }
 
 ul li a{
@@ -31,19 +31,23 @@ ul li a{
     font-family: "Roboto",sans-serif;
     font-size: 15px;
     margin-right: 2px;
+    text-align: center;
    
     
 } 
-ul li a :hover{
+ul li a:hover{
     
-    background-color: hotpink;
+    
+    border: 2px solid black;
+    background-color: burlywood;
+    transition: all 0.2s ease-in;
 }
 
 ul li ul li{
     display: none;
     
 }
-ul li : hover{
+ul li:hover ul li{
     display: block;
 }
 
@@ -64,7 +68,7 @@ body{
     position: absolute;
     width: 1300px;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 100px;
 }
 h1{
     color: black;
